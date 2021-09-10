@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Abigail is a front-end developer, designer, and illustrator based in Los Angeles. Check out her recent work and portfolio here!">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -25,7 +27,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Abigail Yi</a>
+            <a class="navbar-brand" href="#" title="Abigail Yi">Abigail Yi</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,44 +35,43 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" id="active" aria-current="page" href="index.html"
+                            title="Home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="about.html" title="About Me">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="work.html">Work </a>
+                        <a class="nav-link" href="work.html" title="Portfolio">Work </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html" title="Contact Me">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <div class="container" id="hero-box">
-        <div class="row">
-            <div class="col center">
-                <h1>Hello.<br />I'm <span class="abby">Abby</span>,<br />web developer.</h1>
-                <h4>Front-end Developer, Designer, and Illustrator<br />based in Los Angeles, CA.</h4>
-                <div class="contact-btn">
-                    <button type="button" class="btn btn-primary contact">Contact me!</button>
-                </div>
+    <div class="bg">
+        <div class="container" id="hero-box">
+            <h1 class="hero">Hello.<br />I'm <span class="abby">Abby</span>,<br />web developer.</h1>
+            <h4 class="hero">Front-end Developer, Designer, and Illustrator<br />based in Los Angeles, CA.</h4>
+            <div class="contact-btn">
+                <button type="button" class="btn btn-primary contact">Contact me!</button>
             </div>
         </div>
     </div>
 
     <p id="hero-text">Check out some of my more recent projects below!</p>
 
-    <div class="container project-box mb-5">
+    <div class="container project-box project-box-top mb-5">
         <div class="row">
             <div class="col-md-6 order-1" id="project-img">
-                <img src="img/Weather-App.png" class="project-thumbnails" />
+                <img src="img/Weather-App.png" class="project-thumbnails"
+                    alt="Weather forecast app built in vanilla JavaScript on laptop browser" />
             </div>
             <div class="col-md-6 order-2" id="text-left">
                 <h2>Weather App</h2>
-                <p>Weather App is a weather forecast app that will pull daily and weekly
+                <p class="featured">Weather App is a weather forecast app that will pull daily and weekly
                     weather data via API from
                     OpenWeatherMap. This project was coded in vanilla Javascript, HTML, CSS, and Bootstrap.
                     (ReactJS
@@ -83,24 +84,27 @@
         <div class="row">
             <div class="col-md-6 order-4 order-md-3" id="text-right">
                 <h2>Croissant Boy</h2>
-                <p>Croissant Boy is my first responsive multi-page website that I built as a
+                <p class="featured">Croissant Boy is my first responsive multi-page website that I built as a
                     project during my Responsive workshop with SheCodes. It was coded using HTML, CSS, and
                     Bootstrap.</p><br />
                 <button type="button" class="btn btn-outline-primary">View project details</button>
             </div>
             <div class="col-md-6 order-3 order-md-4" id="project-img">
-                <img src="img/Croissant-Boy.png" class="project-thumbnails" />
+                <img src="img/Croissant-Boy.png" class="project-thumbnails"
+                    alt="Croissant Boy responsive website shown on laptop, tablet, and mobile devices." />
             </div>
         </div>
     </div>
     <div class="container project-box mb-5">
         <div class="row">
             <div class="col-md-6 order-6 order-md-5" id="project-img">
-                <img src="img/STAMPD-App.png" class="project-thumbnails" />
+                <img src="img/STAMPD-App.png" class="project-thumbnails"
+                    alt="STAMPD concept customer retention app displayed on various mobile device screens." />
             </div>
             <div class="col-md-6 order-5" id="text-left">
                 <h2>STAMPD App</h2>
-                <p>STAMPD App is concept for an app created for customer retention via stamp cards that I built as a
+                <p class="featured">STAMPD App is concept for an app created for customer retention via stamp cards that
+                    I built as a
                     project during my UX
                     boot camp with Springboard. The intent was to create an app with a centralized wallet to carry
                     various stamp cards for redemption at your favorite local businesses rather than bloat the wallet.
@@ -123,14 +127,20 @@
         </div>
     </div>
 
-    <a href="mailto:hello@abigail-yi.com" class="email" alt="Send email to hello@abigail-yi.com">hello@abigail-yi.com
+    <a href="mailto:hello@abigail-yi.com" class="email centered"
+        alt="Send email to hello@abigail-yi.com">hello@abigail-yi.com
     </a>
+
+    <footer>
+        <p class="copyright centered">This website was coded by Abigail Yi<br /> and is <a
+                href="https://github.com/abigailyi/Personal-Portfolio" alt="Abigail Yi's GitHub">open-sourced</a>.</p>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
     <script src="/src/script.js"></script>
 </body>
-<footer>© 2021 Abigail Yi All rights reserved.</footer>
 
 </html>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -19,40 +20,71 @@
 
     <link rel="stylesheet" href="src/style.css">
 
-    <title>Abigail Yi | Contact</title>
+    <title>Abigail Yi | About Me</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Abigail Yi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#" title="Abigail Yi">Abigail Yi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html" title="Home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="about.html" title="About Me">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="work.html">Work</a>
+                        <a class="nav-link" href="work.html" title="Portfolio">Work </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                        <a class="nav-link active" id="active" aria-current="page" href="contact.html"
+                            title="Contact Me">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row contact-page">
+            <div class="col order-1">
+                <img src="img/wb-007-codingEDITED.png" class="coding"
+                    alt="Illustration of woman coding on her laptop" />
+            </div>
+            <div class="col order-2 contact-info">
+                <h3>Let's get in touch!</h1>
+                    <p class="profile mt-3">I'm interested in full-time, part-time, and internship opportunities -
+                        especially
+                        for junior web development roles. Also, open to junior graphic design roles &
+                        collaborations!<br />
+                        Send me a message and let's chat!</p>
+                    <button type="button" class="btn btn-primary contact mt-3">Let's
+                        chat!</button>
+            </div>
+        </div>
+    </div>
+
+    <a href="mailto:hello@abigail-yi.com" class="email centered mt-5"
+        alt="Send email to hello@abigail-yi.com">hello@abigail-yi.com
+    </a>
+
+    <footer>
+        <p class="copyright centered">This website was coded by Abigail Yi<br /> and is <a
+                href="https://github.com/abigailyi/Personal-Portfolio" alt="Abigail Yi's GitHub">open-sourced</a>.
+        </p>
+    </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
-    <script src="src/script.js"></script>
+    <script src="/src/script.js"></script>
 </body>
 
 </html>

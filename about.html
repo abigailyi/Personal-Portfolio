@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -19,40 +20,103 @@
 
     <link rel="stylesheet" href="src/style.css">
 
-    <title>Abigail Yi | About</title>
+    <title>Abigail Yi | About Me</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Abigail Yi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#" title="Abigail Yi">Abigail Yi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html" title="Home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                        <a class="nav-link active" id="active" aria-current="page" href="about.html"
+                            title="About Me">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="work.html">Work</a>
+                        <a class="nav-link" href="work.html" title="Portfolio">Work </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html" title="Contact Me">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 order-1 profile">
+                <img src="img/portrait-001.png" class="portrait d-none d-md-block" alt="Photo of Abigail Yi" />
+                <img src="img/portrait-002.png" class="sm-portrait d-block d-md-none" alt="Photo of Abigail Yi" />
+                <br />
+                <p class="profile quote">"It is only with the heart that one
+                    can see rightly; what is essential is invisible to the eye"<br /><span class="subhead-teal">-
+                        Antoine de Saint-Exupery</span></p>
+            </div>
+
+            <div class="col-md-6 order-2" id="about-me">
+                <p class="subhead-pink">About Me</p>
+                <h2 class="name">Abigail Yi</h2>
+                <p class="profile">I'm a self-taught web developer, designer, and illustrator based in Los
+                    Angeles,
+                    California.<br /><br />
+                    My passion is to create products and experiences that resonates with people, builds connections,
+                    and
+                    makes life a whole lot simpler.<br /><br />
+                    I am adaptable, a bit of an autodidact, and love to solve problems. I've grown to embrace challenges
+                    and enjoy learning new things along the way.</p>
+                <br />
+                <p class="subhead-pink">My Toolkit</p>
+                <p class="profile"><span class="subhead-teal">Web Development:</span> HTML, CSS, JavaScript, React
+                    JS, Bootstrap, Git</p>
+                <p class="profile"><span class="subhead-teal">Design:</span> Figma, Sketch, InVision, Photoshop,
+                    Premiere Pro, Procreate, Clip Studio Paint</p>
+                <p class="subhead-pink">Random Facts</p>
+                <p class="profile"><span class="subhead-teal">Favorite pastimes: </span> Challenging escape
+                    rooms and beer tasting with the friends.</p>
+                <p class="profile"><span class="subhead-teal">Likes:</span> Teas, video games, noctilucent clouds, and
+                    lemon muffins.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="contact-box">
+        <div class="row">
+            <div class="col-8 col-sm-8 order-sm-1">
+                <h3 class="collab">Let's collaborate.</h3>
+                <p class="collab"> I'm interested in full-time, part-time, and internship opportunities - especially
+                    for junior web development roles. Open to design roles & collaborations!</p>
+            </div>
+            <div class="col-4 col-sm-4 order-sm-2" id="contact-btn">
+                <button type="button" class="btn btn-primary contact">Contact me!</button>
+            </div>
+        </div>
+    </div>
+
+    <a href="mailto:hello@abigail-yi.com" class="email centered"
+        alt="Send email to hello@abigail-yi.com">hello@abigail-yi.com
+    </a>
+
+    <footer>
+        <p class="copyright centered">This website was coded by Abigail Yi<br /> and is <a
+                href="https://github.com/abigailyi/Personal-Portfolio" alt="Abigail Yi's GitHub">open-sourced</a>.
+        </p>
+    </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
-    <script src="src/script.js"></script>
+    <script src="/src/script.js"></script>
 </body>
 
 </html>
