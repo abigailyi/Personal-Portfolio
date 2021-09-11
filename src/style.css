@@ -314,6 +314,10 @@ footer .social-links a:hover {
   font-weight: 200;
 }
 
+.fa-arrow-down {
+  color: var(--primary-color);
+}
+
 @media (max-width: 767px) {
   div.hero-text {
     display: block;
