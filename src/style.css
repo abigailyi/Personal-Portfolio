@@ -111,7 +111,7 @@ a:hover {
   color: white;
   border: none;
   border-radius: 3px;
-  height: 53px;
+  height: 46px;
   width: 170px;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -150,10 +150,6 @@ a:hover {
   text-align: center;
 }
 
-#about-me {
-  margin-left: 100px;
-}
-
 img.project-thumbnails {
   height: 350px;
   width: 350px;
@@ -181,8 +177,19 @@ div.profile {
 }
 
 .profile {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 200;
+}
+
+.portfolio {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+#about-me {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .subhead-pink {
@@ -232,6 +239,7 @@ div.contact-page {
   border-radius: 10px;
   padding: 30px 70px;
   margin-bottom: 55px;
+  margin-top: 35px;
 }
 
 h3.collab {
@@ -247,6 +255,10 @@ p.collab {
 p.quote {
   text-align: center;
   margin-left: 0px;
+}
+
+.ux {
+  width: 100%;
 }
 
 #contact-btn {
@@ -310,15 +322,53 @@ footer .social-links a:hover {
 
 .copyright {
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 200;
+  letter-spacing: 2px;
 }
 
 .fa-arrow-down {
   color: var(--primary-color);
 }
 
+#topBtn {
+  position: fixed;
+  bottom: 15px;
+  float: right;
+  right: 18.5%;
+  left: 95%;
+  width: 100%;
+}
+
+img.project-thumb {
+  width: 400px;
+  height: 400px;
+  margin: 20px 0px;
+}
+
+hr {
+  color: var(--secondary-color);
+}
+
 @media (max-width: 767px) {
+  img.project-thumb {
+    width: 280px;
+    height: 280px;
+  }
+
+  #about-me {
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  .portfolio {
+    font-size: 12px;
+  }
+
+  #topBtn {
+    display: none;
+  }
+
   div.hero-text {
     display: block;
     flex-direction: column;
@@ -367,10 +417,6 @@ footer .social-links a:hover {
     margin: 0px;
   }
 
-  #about-me {
-    margin: 0 auto;
-  }
-
   #project-img {
     margin: 0 auto;
   }
@@ -407,11 +453,6 @@ footer .social-links a:hover {
     width: 150px;
   }
 
-  #about-me {
-    margin: 0 auto;
-    padding: 45px 15px;
-  }
-
   p.collab {
     font-weight: 200;
     font-size: 14px;
@@ -423,7 +464,7 @@ footer .social-links a:hover {
   }
 
   .copyright {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   p.quote {
@@ -439,6 +480,10 @@ footer .social-links a:hover {
   div.contact-page {
     width: 100%;
   }
+
+  div.social-links {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 990px) {
@@ -451,6 +496,15 @@ footer .social-links a:hover {
   p.quote {
     margin-left: 40px;
     width: 100%;
+  }
+
+  img.project-thumb {
+    width: 280px;
+    height: 280px;
+  }
+
+  #topBtn {
+    display: none;
   }
 }
 

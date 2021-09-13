@@ -20,10 +20,21 @@
 
     <link rel="stylesheet" href="src/style.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("body").on("contextmenu", function (e) {
+                return false;
+            });
+        });
+    </script>
+
     <title>Abigail Yi | About Me</title>
 </head>
 
 <body>
+    <a id="page-top"></a>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html" title="Abigail Yi">Abigail Yi</a>
@@ -50,6 +61,7 @@
             </div>
         </div>
     </nav>
+
 
     <div class="container mt-5">
         <div class="row">
@@ -97,7 +109,9 @@
                     for junior web development roles. Open to design roles & collaborations!</p>
             </div>
             <div class="col-4 col-sm-4 order-sm-2" id="contact-btn">
-                <button type="button" class="btn btn-primary contact">Contact me!</button>
+                <a class="btn btn-primary contact" href="mailto:hello@abigail-yi.com" role="button"
+                    target="_blank">Contact
+                    me!</a>
             </div>
         </div>
     </div>
@@ -109,18 +123,23 @@
             </a>
         </div>
         <div class="social-links d-flex justify-content-center mb-5">
-            <a href="https://github.com/abigailyi">
+            <a href="https://github.com/abigailyi" alt="Link to GitHub">
                 <i class="fab fa-github fa-2x"></i></a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/abigailyi/" alt="Link to LinkedIn">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/rabbitkun" alt="Link to Twitter">
                 <i class="fab fa-twitter fa-2x"></i></a>
-            <a href="#">
+            <a href="https://www.instagram.com/rabbitkun/" alt="Link to Instagram">
                 <i class="fab fa-instagram fa-2x"></i></a>
         </div>
-        <p class="copyright text-center">This website was coded by Abigail Yi<br /> and is <a
-                href="https://github.com/abigailyi/Personal-Portfolio" alt="Abigail Yi's GitHub">open-sourced</a>.
+        <p class="copyright text-center">WEBSITE CODED BY ME © 2021 ABIGAIL YI
+            <br />VIEW THE GIT REPOSITORY <a href="https://github.com/abigailyi/Personal-Portfolio"
+                style="text-decoration: none;" alt="Link to GitHub Repository">HERE</a>
         </p>
     </footer>
 
+    <a href="#page-top" id="topBtn"><i class="fas fa-arrow-circle-up fa-3x"></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"

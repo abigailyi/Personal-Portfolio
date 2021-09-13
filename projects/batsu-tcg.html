@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -19,13 +20,23 @@
 
     <link rel="stylesheet" href="../src/style.css">
 
-    <title>Abigail Yi | Batsu TCG</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("body").on("contextmenu", function (e) {
+                return false;
+            });
+        });
+    </script>
+
+    <title>Abigail Yi | Batsu TCG Project</title>
 </head>
 
 <body>
+    <a id="page-top"></a>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Abigail Yi</a>
+            <a class="navbar-brand" href="../index.html" title="Abigail Yi">Abigail Yi</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,26 +44,119 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="../index.html" title="Home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="../about.html" title="About Me">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="work.html">Work </a>
+                        <a class="nav-link active" id="active" aria-current="page" href="../work.html"
+                            title="Portfolio">Work </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="../contact.html" title="Contact Me">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-7 order-1 mt-4" id="about-project">
+                <p class="subhead-pink">Front-end Development</p>
+                <h2 class="name">Croissant Boy</h2>
+                <p class="portfolio">My first multi-page responsive website that I coded during my SheCodes
+                    Responsive workshop.<br /><br />We were tasked with building a responsive website on the topic of
+                    croissants
+                    with a
+                    navigation bar and some basic content. I felt the prompt was very dry so I took the creative freedom
+                    to create a little croissant mascot, add an image gallery that expands on hover, and give the recipe
+                    card a highlight feature to help users follow along easier.</p>
+                <br />
+                <p class="subhead-pink">Tools + Languages</p>
+                <p class="portfolio"><span class="subhead-teal">Web Development:</span> HTML, CSS, Bootstrap Framework,
+                    Git Version Control</p>
+                <p class="portfolio" style="margin-bottom: -15px;"><span class="subhead-teal">Illustration:</span>
+                    Procreate, Photoshop</p>
+                <br /><br />
+                <a class="btn btn-primary contact-btn mb-3" href="https://cranky-nightingale-c5bc06.netlify.app/"
+                    role="button" target="_blank" alt="Link to Croissant Boy project">View Project</a>
+                <hr />
+                <p class="subhead-pink">Challenges</p>
+                <p class="portfolio">Initially I was overwhelmed at the thought of coding a website that is compatible
+                    with multiple browsers <strong>and</strong> device screens.<br /><i>There are so many devices out
+                        there!</i><br /><br />I had a hard time trying to get a grasp of the Bootstrap
+                    framework since I had never used a framework before. At times it felt like I kept running into a
+                    brick wall repeatedly until something clicked.</p>
+                <br />
+                <p class="subhead-pink" style="color: var(--primary-color);">Solutions</p>
+                <p class="portfolio">After trying to brute force different solutions and wacky ideas I had, what
+                    ultimately helped me was to take a step back and read through some of the Bootstrap documentation. I
+                    also asked for help in our Slack channel and received some good information on how flexbox worked
+                    from our mentors.</p>
+                <br />
+                <p class="subhead-pink" style="color: var(--secondary-color);">Learning Points</p>
+                <p class="portfolio">It's okay to ask for help when you need it.<br />When you get stuck, take a break
+                    and
+                    come back with a fresh perspective.</p>
+            </div>
+            <div class="col-md-5 order-2 project-thumb">
+                <img src="../img/Croissant-Boy.png" class="d-flex ms-2 project-thumb"
+                    alt="Croissant Boy responsive webpage displayed on various devices" />
+                <img src="../img/Croissant-Boy-2.png" class="d-flex ms-2 project-thumb"
+                    alt="Croissant Boy responsive webpage displayed on various devices" />
+                <img src="../img/Croissant-Boy-3.png" class="d-flex ms-2 project-thumb"
+                    alt="Croissant Boy responsive webpage displayed on various devices" />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="contact-box">
+        <div class="row">
+            <div class="col-8 col-sm-8 order-sm-1">
+                <h3 class="collab">Let's collaborate.</h3>
+                <p class="collab"> I'm interested in full-time, part-time, and internship opportunities - especially
+                    for junior web development roles. Open to design roles & collaborations!</p>
+            </div>
+            <div class="col-4 col-sm-4 order-sm-2" id="contact-btn">
+                <a class="btn btn-primary contact" href="mailto:hello@abigail-yi.com" role="button"
+                    target="_blank">Contact me!</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="d-flex justify-content-center mt-5">
+            <a href="mailto:hello@abigail-yi.com" class="email"
+                alt="Send email to hello@abigail-yi.com">hello@abigail-yi.com
+            </a>
+        </div>
+        <div class="social-links d-flex justify-content-center mb-5">
+            <a href="https://github.com/abigailyi" alt="Link to GitHub">
+                <i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/abigailyi/" alt="Link to LinkedIn">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/rabbitkun" alt="Link to Twitter">
+                <i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.instagram.com/rabbitkun/" alt="Link to Instagram">
+                <i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+        <p class="copyright text-center">WEBSITE CODED BY ME © 2021 ABIGAIL YI
+            <br />VIEW THE GIT REPOSITORY <a href="https://github.com/abigailyi/Personal-Portfolio"
+                style="text-decoration: none;" alt="Link to GitHub Repository">HERE</a>
+        </p>
+    </footer>
+
+    <a href="#page-top" id="topBtn"><i class="fas fa-arrow-circle-up fa-3x"></i></a>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
-    <script src="../src/script.js"></script>
+    <script src="..//src/script.js"></script>
 </body>
 
 </html>
