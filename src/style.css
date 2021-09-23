@@ -45,7 +45,9 @@ h4 {
 }
 
 div.bg {
-  background: var(--background-color);
+  background-image: url("../img/AbbyCodes-Header3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   padding: 45px 10px;
 }
@@ -354,6 +356,10 @@ hr {
   img.project-thumb {
     width: 280px;
     height: 280px;
+  }
+
+  div.bg {
+    background-size: auto;
   }
 
   #about-me {
