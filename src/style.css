@@ -45,11 +45,8 @@ h4 {
 }
 
 div.bg {
-  background-image: url("../img/AbbyCodes-Header3.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  padding: 45px 10px;
+  background-color: rgba(209, 198, 255, 0.253);
+  padding: 30px 0px;
 }
 
 img.hero-img {
